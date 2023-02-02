@@ -1,2 +1,2 @@
-# movie-recommendation
+# movie-recommendation program
 Bootcamp task
