@@ -10,10 +10,8 @@
 # Import NLP module
 import spacy
 
-
 # Load language module.
 nlp = spacy.load('en_core_web_md')
-
 
 # Define a function that returns the most similar movie.
 def most_similarMovie(description, movie_list):
@@ -42,7 +40,6 @@ def most_similarMovie(description, movie_list):
 # Create a list of movies.
 movie_list = []
 
-
 # Read the movies text file and store in the movie list.
 # If the text file is non existing display a message to the user.
 try:
@@ -56,7 +53,6 @@ except FileNotFoundError:
     print("\n\tPlease add or check movies.txt file and run the program again!\n")
     exit()
 
-
 # A description of a movie, in this case "Planet Hulk".
 description = """
     Will he save their world or destroy it? When the hulk becomes too 
@@ -69,4 +65,3 @@ description = """
 #   the movie from the text file most similar to the previously watched movie.
 print("\n  If you liked \"Planet Hulk\" you may enjoy the following movie:")
 most_similarMovie(description, movie_list)
-
